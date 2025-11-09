@@ -83,13 +83,13 @@ function Card() {
                 >
                     <div className="space-y-4">
                         <div className="-space-y-3">
-                            <h3 className="heading-3 font-roboto-slab">22</h3>
-                            <h3 className="heading-3 font-roboto-slab">09</h3>
-                            <h3 className="heading-3 font-roboto-slab">24</h3>
+                            <h3 className="heading-3 font-roboto-slab">31</h3>
+                            <h3 className="heading-3 font-roboto-slab">01</h3>
+                            <h3 className="heading-3 font-roboto-slab">26</h3>
                         </div>
                         <div className="w-[1.5px] bg-black h-36 ml-5" />
                         <h2 className="heading-3 xl:heading-2 font-bold font-dancing-script">
-                            Kio & <br />Christine
+                            Maribel & <br />Fernando
                         </h2>
                     </div>
                     {/* <div className="font-roboto-slab">
@@ -99,7 +99,7 @@ function Card() {
                     <div className="flex justify-start md:justify-center items-center pt-4">
                         <button onClick={openInvitation} className="group">
                             <div className="flex flex-col justify-center items-center border border-black rounded-lg px-4 py-2 pb-1 -space-y-1">
-                                <p className="font-roboto-slab text-sm">Open Invitation</p>
+                                <p className="font-roboto-slab text-sm">Abrir Invitación</p>
                                 <RiArrowDownWideLine className="text-3xl group-hover:translate-y-1 group-active:scale-75 transition duration-300" />
                             </div>
                         </button>

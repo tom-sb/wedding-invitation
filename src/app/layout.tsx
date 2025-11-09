@@ -13,8 +13,8 @@ const roboto_slab = Roboto_Slab({
 })
 
 export const metadata: Metadata = {
-  title: "Wedding of Kio & Christine",
-  description: "The wedding of kio & christine at September, 22 2024",
+  title: "Wedding of Maribel & Fernando",
+  description: "The wedding of Maribel & Fernando at September, 22 2024",
   icons: {
     icon: "/ring.svg"
   },
@@ -23,8 +23,8 @@ export const metadata: Metadata = {
     type: "website",
     locale: "ID-id",
     siteName: "",
-    title: "Wedding of Kio & Christine",
-    description: "The wedding of kio & christine at September, 22 2024",
+    title: "Wedding of Maribel & Fernando",
+    description: "The wedding of Maribel & Fernando at September, 22 2024",
   },
 };
 

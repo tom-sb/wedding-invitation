@@ -37,8 +37,8 @@ export default function Guestbook() {
                 className="space-y-4 md:space-y-5 text-center px-5 md:px-0"
                 {...anim(bluryEffect)}
             >
-                <h2 className="heading-4 md:heading-3 xl:heading-2 font-dancing-script">Guestbook</h2>
-                <p className="text-xs md:text-base font-roboto-slab">Your presence made our day, your words will stay forever</p>
+                <h2 className="heading-4 md:heading-3 xl:heading-2 font-dancing-script">Libro de visitas</h2>
+                <p className="text-xs md:text-base font-roboto-slab">Su presencia nos alegró el día, sus palabras permanecerán para siempre.</p>
             </motion.div>
             <div className="mt-10 max-w-xl mx-auto px-5 md:px-0">
                 <Form />

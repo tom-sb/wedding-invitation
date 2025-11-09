@@ -109,7 +109,7 @@ export default function Form() {
             <div className="flex justify-end">
                 <button className="font-roboto-slab w-max ml-auto mr-0 bg-black text-ivory rounded-md px-10 py-2
                 text-sm md:text-base outline-gray-500 active:outline-double active:outline-2 outline-offset-2">
-                    Send
+                    Enviar
                 </button>
             </div>
         </form>

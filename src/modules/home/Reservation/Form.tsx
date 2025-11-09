@@ -93,7 +93,7 @@ export default function Form() {
                 <input
                     type="text"
                     className="block w-full rounded-md bg-gray-100 border-transparent focus:border-ivory focus:bg-white focus:ring-0"
-                    placeholder="Name"
+                    placeholder="Nombres"
                     value={form.name}
                     onChange={handleChange}
                     name="name"
@@ -116,7 +116,7 @@ export default function Form() {
                     <textarea
                         className="block w-full rounded-md bg-gray-100 border-transparent focus:border-ivory focus:bg-white focus:ring-0 resize-none"
                         rows={5}
-                        placeholder="Message"
+                        placeholder="Mensaje"
                         value={form.message}
                         onChange={handleChange}
                         maxLength={200}
@@ -127,7 +127,7 @@ export default function Form() {
                 <FieldError name="message" />
             </div>
             <div className="space-y-4 md:space-y-2 pt-2">
-                <p className="font-roboto-slab text-sm md:text-base font-medium">Confirmation</p>
+                <p className="font-roboto-slab text-sm md:text-base font-medium">Confirmación</p>
                 <div className="flex items-center gap-3">
                     <input
                         id="yes"
@@ -138,7 +138,7 @@ export default function Form() {
                         onChange={handleChange}
                         value="1"
                     />
-                    <label htmlFor="yes" className="font-roboto-slab text-sm md:text-base">Yes, Will Attend</label>
+                    <label htmlFor="yes" className="font-roboto-slab text-sm md:text-base">Sí, asistiré</label>
                 </div>
                 <div className="flex items-center gap-3">
                     <input
@@ -151,13 +151,13 @@ export default function Form() {
                         value="0"
                         defaultChecked
                     />
-                    <label htmlFor="no" className="font-roboto-slab text-sm md:text-base"> No, Will Not Attend</label>
+                    <label htmlFor="no" className="font-roboto-slab text-sm md:text-base"> No, no asistiré</label>
                 </div>
             </div>
             <div className="flex justify-end pt-4 md:pt-0">
                 <button className="w-max ml-auto mr-0 bg-black text-ivory rounded-md px-10 py-2 text-sm md:text-base
                 outline-gray-500 active:outline-double active:outline-2 outline-offset-2 font-roboto-slab">
-                    Send
+                    Enviar
                 </button>
             </div>
         </form>

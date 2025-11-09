@@ -6,20 +6,20 @@ import { GoDotFill } from "react-icons/go";
 
 const timelines = [
     {
-        title: "First met",
-        description: "We first met at our workplace in 2017"
+        title: "El dia que nos conocimos",
+        description: "A ella le robaron y el aparecio y se enfrento a los malechores"
     },
     {
-        title: "Our Similiarity",
-        description: "We loves to travel, Eat good food and Watch movies"
+        title: "Que teniamos en comun",
+        description: "Nos encantaba viajar... ahh y estamos locos"
     },
     {
-        title: "Starting to become an official couple",
-        description: "in 2020, we officially become a couple"
+        title: "Empezamos a ser una pareja oficial.",
+        description: "el 15 de octbre 2021, empezamos nuestra historia de amor"
     },
     {
-        title: "Invite to Celebrate",
-        description: "22 September 2024, we invite you to celebrate our happy day."
+        title: "Te invitamos a celebrar",
+        description: "el 31 de enero del 2026, queremos que seas parte de este dia tan especial."
     }
 ]
 
@@ -88,7 +88,7 @@ export default function OurStory() {
                 className="px-4 md:px-0 heading-4 md:heading-3 xl:heading-2 font-dancing-script font-bold origin-left"
                 {...anim(bluryEffect)}
             >
-                Our Story
+                Nuestra Historia
             </motion.h2>
             <div className="grid grid-cols-1 md:grid-cols-2 mt-betweenBoxMd xl:mt-betweenBox gap-14 md:gap-6 lg:gap-[4.75rem] xl:gap-[10.4375rem]">
                 <motion.div className="px-4 md:px-0 space-y-4 md:space-y-[2.375rem] col-span-1" {...anim(stagger)}>

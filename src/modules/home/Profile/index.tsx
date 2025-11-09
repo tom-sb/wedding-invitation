@@ -36,21 +36,21 @@ export default function Profile() {
             <div className="order-none md:order-1 flex flex-col justify-center items-center space-y-5 xl:space-y-7">
                 <Motion.Box className="text-center space-y-5 md:space-y-7" {...anim({ duration: 1, delay: .2 })}>
                     <h3 className="heading-4 md:heading-3 font-dancing-script font-bold">
-                        Kio Sato
+                        Maribel
                     </h3>
                     <div className="space-y-2">
-                        <p className="text-xs md:text-sm font-roboto-slab">The youngest son of the couple</p>
-                        <p className="text-sm md:text-base font-roboto-slab">Tn. Edward and Ny. Lui Lina Tan</p>
+                        <p className="text-xs md:text-sm font-roboto-slab">La hija mayor de:</p>
+                        <p className="text-sm md:text-base font-roboto-slab"> Don Julian y Doña Gregoria</p>
                     </div>
                 </Motion.Box>
                 <Motion.Heading className="heading-4 md:heading-3 font-dancing-script font-bold"  {...anim({ duration: 1, delay: .3 })}>&</Motion.Heading>
                 <Motion.Box className="text-center space-y-5 md:space-y-7" {...anim({ duration: 1, delay: .4 })}>
                     <h3 className="heading-4 md:heading-3 font-dancing-script font-bold">
-                        Christine
+                        Fernando
                     </h3>
                     <div className="space-y-2">
-                        <p className="text-xs md:text-sm font-roboto-slab">First daughter of the couple</p>
-                        <p className="text-sm md:text-base font-roboto-slab">Tn. Kalim Sentosa and Ny. Lely Yanti</p>
+                        <p className="text-xs md:text-sm font-roboto-slab">El hijo unico de:</p>
+                        <p className="text-sm md:text-base font-roboto-slab">Don Tomas y Doña Guadalupe</p>
                     </div>
                 </Motion.Box>
             </div>

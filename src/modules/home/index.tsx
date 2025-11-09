@@ -5,6 +5,7 @@ import Profile from './Profile';
 import Gallery from "./Gallery";
 import OurStory from "./OurStory";
 import Event from "./Event";
+import CivilEvent from "./CivilEvent";
 import Countdown from "./Countdown";
 import Invitation from './Invitation';
 import BankATM from './BankATM';
@@ -34,6 +35,7 @@ function Content() {
             <OurStory />
             <Gallery />
             <Event />
+            <CivilEvent />
             <BankATM />
             <Guestbook />
             <Reservation />

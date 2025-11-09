@@ -36,19 +36,21 @@ const Content = () => {
         >
             <div className="space-y-10 md:space-y-16 xl:space-y-24 text-center px-2 md:px-12 xl:px-0">
                 <div className="space-y-4">
-                    <h3 className="heading-4 xl:heading-3 font-dancing-script">Thank you</h3>
-                    <p className="text-xs md:text-sm xl:text-base font-roboto-slab">It is an honor and happiness for us if you are willing to be present to give your blessing to the bride and groom.</p>
+                    <h3 className="heading-4 xl:heading-3 font-dancing-script">Muchas gracias!</h3>
+                    <p className="text-xs md:text-sm xl:text-base font-roboto-slab">
+                        Para nosotros sería un honor y una alegría que estuvieran presentes para dar su bendición a los novios.
+                    </p>
                 </div>
                 <h3 className="heading-4 xl:heading-3 font-dancing-script">
-                    Wedding of KIO & CHRISTINE
+                    boda de MARIBEL & FERNANDO
                 </h3>
                 <button className="flex flex-col justify-center items-center mx-auto" onClick={handleScrollToTop}>
                     <RiArrowUpWideLine className="text-2xl" />
-                    <p className="font-roboto-slab text-xs">Back to top</p>
+                    <p className="font-roboto-slab text-xs">Ir hacia arriba</p>
                 </button>
             </div>
             <div className="px-2 md:px-12 xl:px-28 w-11/12 mx-auto">
-                <p className="font-roboto-slab text-xs mt-2 text-gray-500 text-center">@ All Right Reserved | Created by Hendri Alqori</p>
+                <p className="font-roboto-slab text-xs mt-2 text-gray-500 text-center">@ All Right Reserved | Created by Fernando</p>
             </div>
         </div>
     )

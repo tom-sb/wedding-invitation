@@ -30,10 +30,10 @@ export default function Hero() {
     return (
         <section id="hero" className="container-box space-y-14 pt-10 md:pt-32">
             <motion.div className="text-center space-y-5 md:space-y-8 w-max mx-auto" {...anim({ duration: 1, delay: 0 })} >
-                <p className="font-roboto-slab">The wedding of</p>
-                <h1 className="heading-4 md:heading-2 lg:heading-1 font-dancing-script font-bold md:font-normal">KIO & CHRISTINE</h1>
+                <p className="font-roboto-slab">Nuestra boda</p>
+                <h1 className="heading-4 md:heading-2 lg:heading-1 font-dancing-script font-bold md:font-normal">MARIBEL & FERNANDO</h1>
                 <h4 className="text-sm md:text-[1.625rem] font-roboto-slab">
-                    September, 22 2024 - Medan
+                    31 de enero del 2026 - Arequipa
                 </h4>
             </motion.div>
             <HeroImage />

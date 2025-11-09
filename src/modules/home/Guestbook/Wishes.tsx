@@ -92,7 +92,7 @@ export default function Wishes() {
                             onClick={prevPage}
                         >
                             <GrFormPrevious className="text-xl" />
-                            <span className="">Previous</span>
+                            <span className="">Anterior</span>
                         </button>
                         <Helpers />
                         <button
@@ -100,7 +100,7 @@ export default function Wishes() {
                     outline-gray-500 active:outline-double active:outline-2 outline-offset-2"
                             onClick={nextPage}
                         >
-                            <span className="">Next</span>
+                            <span className="">Siguiente</span>
                             <GrFormNext className="text-xl translate-y-[1px]" />
                         </button>
                     </div>

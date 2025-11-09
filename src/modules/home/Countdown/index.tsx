@@ -46,7 +46,7 @@ export default function Countdown() {
     const [time, setTime] = React.useState<Time>(initialTime)
 
     const countdown = () => {
-        const weddingDay = new Date("Sep 22, 2024 19:00:00").getTime()
+        const weddingDay = new Date("Jan 31, 2026 12:00:00").getTime()
 
         intervalRef.current = setInterval(() => {
             const now = new Date().getTime()
@@ -83,10 +83,10 @@ export default function Countdown() {
                 className="flex flex-col md:flex-row justify-center items-center gap-16 md:gap-20 xl:gap-32"
                 {...anim(stagger)}
             >
-                <Li type="Days" value={time.days} delay={0.2} />
-                <Li type="Hour" value={time.hour} delay={0.4} />
-                <Li type="Minutes" value={time.minute} delay={0.6} />
-                <Li type="Seconds" value={time.second} delay={0.8} />
+                <Li type="Días" value={time.days} delay={0.2} />
+                <Li type="Horas" value={time.hour} delay={0.4} />
+                <Li type="Minutos" value={time.minute} delay={0.6} />
+                <Li type="Segundos" value={time.second} delay={0.8} />
             </motion.div>
         </section>
 

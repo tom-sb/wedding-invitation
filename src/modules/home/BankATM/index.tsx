@@ -59,22 +59,22 @@ export default function BankATM() {
                 {...anim(bluryEffect)}
             >
                 <h3 className="heading-4 md:heading-3 font-dancing-script text-center font-bold px-4 md:px-0">
-                    Your presence is the best gift,
-                    but if you can&apos;t come and still want to contribute to our future,
-                    our bank details are below.
+                    Su presencia es el mejor regalo, 
+                    pero si no puede venir y aún así desea contribuir a nuestro futuro, 
+                    nuestros datos bancarios se encuentran a continuación.
                 </h3>
                 <Modal open={open} setOpen={setOpen}>
                     <Modal.Button>
                         <div className="flex items-center justify-center gap-3 bg-black text-white rounded-md px-4 py-2 outline-gray-500 active:outline-double active:outline-2 outline-offset-2">
                             <FiGift className="text-2xl" />
-                            <p className="font-light">Give me gift</p>
+                            <p className="font-light">Envia un regalo aqui</p>
                         </div>
                     </Modal.Button>
                     <Modal.Content>
                         <div className="flex flex-col justify-center items-center pt-8 pb-4 gap-3">
-                            <ATM name="Kio sato" number="1750674999" />
+                            <ATM name="Maribel sato" number="1750674999" />
                             <p className="text-gray-500">or</p>
-                            <ATM name="Christine" number="3832888882" />
+                            <ATM name="Fernando" number="3832888882" />
                         </div>
                     </Modal.Content>
                 </Modal>

@@ -62,7 +62,7 @@ const anim = (variants: Variants) => ({
     }
 })
 
-export default function Event() {
+export default function CivilEvent() {
 
     return (
         <section className="container-box2 mt-betweenSectionMd 
@@ -72,12 +72,12 @@ export default function Event() {
                     className="heading-4 md:heading-3 xl:heading-2 font-dancing-script font-bold px-4 md:px-0"
                     {...anim(bluryEffect)}
                 >
-                    Boda Civil & Recepción
+                    Ceremonia Religiosa
                 </motion.h2>
                 <div className="flex justify-start gap-x-2 md:gap-x-4 mt-betweenBoxMd xl:mt-betweenBox px-4 md:px-0">
                     <GoDotFill className="text-base md:text-lg lg:text-xl translate-y-1" />
                     <div className="space-y-4 md:space-y-6">
-                        <motion.h4 className="text-base md:heading-4 font-dancing-script font-bold" {...anim(bluryEffect)}>Recepción</motion.h4>
+                        <motion.h4 className="text-base md:heading-4 font-dancing-script font-bold" {...anim(bluryEffect)}>Ceremonia Religiosa</motion.h4>
                         <motion.ul className="space-y-3 md:space-y-4" {...anim(stagger)}>
                             <Li delay={0.2}>
                                 <IoCalendarClearOutline className="text-xl md:text-2xl" />
@@ -85,13 +85,13 @@ export default function Event() {
                             </Li>
                             <Li delay={0.4}>
                                 <BsClock className="text-xl md:text-2xl" />
-                                <p className="text-xs md:text-base font-roboto-slab">14:40 pm</p>
+                                <p className="text-xs md:text-base font-roboto-slab">12:00 pm</p>
                             </Li>
                             <Li delay={0.6}>
                                 <PiMapPin className="text-2xl md:text-3xl -translate-x-1" />
                                 <p className="text-xs md:text-base font-roboto-slab -translate-x-2">
-                                    <span className="font-bold">El Rocio </span>
-                                    <br />Pasaje Los Molles Nro:200 referencia(Av Fernandini a la altura del restaurante La Cau Cau)
+                                    <span className="font-bold">Iglesia San Miguel Arcangel </span>
+                                    <br />Plaza de Cayma
                                 </p>
                             </Li>
                         </motion.ul>

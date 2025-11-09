@@ -121,8 +121,8 @@ export default function Gallery() {
                     className="space-y-4 md:space-y-5 relative xl:sticky xl:top-[7.375rem] text-center px-5 md:px-0"
                     {...anim(bluryEffect)}
                 >
-                    <h2 className="heading-4 md:heading-3 xl:heading-2 font-dancing-script text-white">Our Gallery</h2>
-                    <p className="text-xs md:text-base font-roboto-slab text-white">A showcase of our most beautiful prewedding moments</p>
+                    <h2 className="heading-4 md:heading-3 xl:heading-2 font-dancing-script text-white">Nuestra galeria de fotos</h2>
+                    <p className="text-xs md:text-base font-roboto-slab text-white">Una muestra de nuestros momentos más hermosos previos a la boda</p>
                 </motion.div>
             </div>
             <ModalGallery
