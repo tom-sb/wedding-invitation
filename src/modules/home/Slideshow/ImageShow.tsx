@@ -5,11 +5,11 @@ import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion"
 
 const photos = [
-    "/photos/slideshow/1.jpg",
-    "/photos/slideshow/2.jpg",
-    "/photos/slideshow/3.jpg",
-    "/photos/slideshow/4.jpg",
-    "/photos/slideshow/5.jpg"
+    "/photos/slideshow/1.jpeg",
+    "/photos/slideshow/2.jpeg",
+    "/photos/slideshow/3.jpeg",
+    "/photos/slideshow/4.jpeg",
+    "/photos/slideshow/5.jpeg"
 ]
 
 export default function ImageShow() {
