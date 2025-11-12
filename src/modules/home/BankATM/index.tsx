@@ -72,9 +72,9 @@ export default function BankATM() {
                     </Modal.Button>
                     <Modal.Content>
                         <div className="flex flex-col justify-center items-center pt-8 pb-4 gap-3">
-                            <ATM name="Maribel sato" number="1750674999" />
+                            <ATM name="Maribel" number="1750674999" cci='' />
                             <p className="text-gray-500">or</p>
-                            <ATM name="Fernando" number="3832888882" />
+                            <ATM name="Fernando" number="898 3392461371" cci='00389801339246137143' />
                         </div>
                     </Modal.Content>
                 </Modal>
@@ -84,30 +84,46 @@ export default function BankATM() {
 }
 
 
-function ATM({ name, number }: { name: string, number: string }) {
+function ATM({ name, number, cci }: { name: string, number: string, cci: string }) {
     let [copied, setCopied] = React.useState(false)
+    let [copiedCci, setCopiedCci] = React.useState(false)
 
     const copyText = async () => {
         try {
             await navigator.clipboard.writeText(number);
             setCopied(true);
-
             setTimeout(() => setCopied(false), 1500)
-            /* Resolved - text copied to clipboard successfully */
         } catch (err) {
             setCopied(false)
-            /* Rejected - text failed to copy to the clipboard */
+        }
+    }
+
+    const copyTextCci = async () => {
+        try {
+            await navigator.clipboard.writeText(cci);
+            setCopiedCci(true);
+            setTimeout(() => setCopiedCci(false), 1500)
+        } catch (err) {
+            setCopiedCci(false)
         }
     }
 
     return (
         <div className="flex flex-col justify-center items-center gap-3">
-            <Image src="/bca.svg" alt="bca-icon" width={70} height={70} />
-            <p className="font-medium">{`${number} a/n ${name}`}</p>
+            <p className="font-medium">{`${name}`}</p>
+            <Image src="/ibk.png" alt="bca-icon" width={70} height={70} />
+            <p className="font-medium">{`${number}`}</p>
             <button className="bg-ivory rounded-md" onClick={copyText}>
-                <div className="px-3 py-[7px] flex items-center justify-center gap-x-2 text-white">
+                <div className="px-3 py-[0px] flex items-center justify-center gap-x-2 text-white">
                     <FaRegCopy className="text-black" />
-                    <p className="text-sm text-black">{copied ? "Copied!" : "Copy bank number"}</p>
+                    <p className="text-sm text-black">{copied ? "Copiado!" : "Copiar nro de cuenta"}</p>
+                </div>
+            </button>
+            <p className="font-medium">{`${cci}`}</p>
+            <button className="bg-ivory rounded-md" onClick={copyTextCci}>
+                <div className="px-3 py-[0px] flex items-center justify-center gap-x-2 text-white">
+                    <FaRegCopy className="text-black" />
+                    <p className="text-sm text-black">{copiedCci ? "Copiado!" : "Copian cci"}</p>
                 </div>
             </button>
         </div>

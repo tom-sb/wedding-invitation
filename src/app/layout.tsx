@@ -14,7 +14,7 @@ const roboto_slab = Roboto_Slab({
 
 export const metadata: Metadata = {
   title: "Wedding of Maribel & Fernando",
-  description: "The wedding of Maribel & Fernando at September, 22 2024",
+  description: "The wedding of Maribel & Fernando at January, 31 2026",
   icons: {
     icon: "/ring.svg"
   },
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     locale: "ID-id",
     siteName: "",
     title: "Wedding of Maribel & Fernando",
-    description: "The wedding of Maribel & Fernando at September, 22 2024",
+    description: "The wedding of Maribel & Fernando at January, 31 2026",
   },
 };
 
