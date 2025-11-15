@@ -100,7 +100,7 @@ export default function CivilEvent() {
             </div>
             <div className="w-full md:w-1/2 xl:w-[630px] h-[389px] md:h-[320px] xl:h-[389px]">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5631.39973115063!2d98.67816612873084!3d3.5872587021008466!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303131cf0fa1607f%3A0x18c10c276bcb239b!2sWisma%20Benteng%20Restaurant!5e0!3m2!1sen!2sid!4v1721889409712!5m2!1sen!2sid"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6768.411494596199!2d-71.547718!3d-16.3846113!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a3f9e5242ab%3A0x8b791dffc5bc4c5f!2sParroquia%20San%20Miguel%20Arc%C3%A1ngel%20Cayma!5e1!3m2!1ses!2spe!4v1763181522818!5m2!1ses!2spe"
                     width="100%"
                     height="100%"
                     allowFullScreen={false}

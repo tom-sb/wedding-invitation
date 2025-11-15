@@ -69,7 +69,7 @@ export default function Wishes() {
         const start = limit * (currentPage - 1) + 1
         const end = Math.min(limit * currentPage, wishes.length)
 
-        return <span className="text-center">Showing {start} - {end} from {wishes.length}</span>
+        return <span className="text-center"> {start} - {end} de {wishes.length}</span>
     }
 
     return (

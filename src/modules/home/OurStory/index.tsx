@@ -6,20 +6,20 @@ import { GoDotFill } from "react-icons/go";
 
 const timelines = [
     {
-        title: "El dia que nos conocimos",
-        description: "A ella le robaron y el aparecio y se enfrento a los malechores"
+        title: "El día que nos conocimos",
+        description: "Aquel día, cuando el peligro la sorprendió, él apareció como un valiente protector."
     },
     {
-        title: "Que teniamos en comun",
-        description: "Nos encantaba viajar... ahh y estamos locos"
+        title: "Que teníamos en común",
+        description: "Compartimos la misma pasión por descubrir nuevos caminos; reír y soñar sin medida, porque en nuestra locura encontramos la felicidad."
     },
     {
         title: "Empezamos a ser una pareja oficial.",
-        description: "el 15 de octbre 2021, empezamos nuestra historia de amor"
+        description: "El 15 de octbre 2021, empezamos nuestra historia de amor"
     },
     {
         title: "Te invitamos a celebrar",
-        description: "el 31 de enero del 2026, queremos que seas parte de este dia tan especial."
+        description: "El 31 de enero del 2026, queremos que seas parte de este día tan especial."
     }
 ]
 
@@ -150,7 +150,7 @@ function Timeline({ title, description, delay }: Props) {
             <GoDotFill className="text-base md:text-lg lg:text-xl translate-y-1" />
             <div className="space-y-2 lg:space-y-4">
                 <h4 className="text-base md:heading-4 font-dancing-script font-bold">{title}</h4>
-                <p className="text-xs md:text-base font-roboto-slab">{description}</p>
+                <p className="text-[0.7rem] md:text-base font-roboto-slab">{description}</p>
             </div>
         </motion.div>
     )

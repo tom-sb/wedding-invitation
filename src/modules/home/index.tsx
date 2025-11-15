@@ -34,8 +34,8 @@ function Content() {
             <Profile />
             <OurStory />
             <Gallery />
-            <Event />
             <CivilEvent />
+            <Event />
             <BankATM />
             <Guestbook />
             <Reservation />

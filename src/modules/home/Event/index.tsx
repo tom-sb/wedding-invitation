@@ -100,7 +100,7 @@ export default function Event() {
             </div>
             <div className="w-full md:w-1/2 xl:w-[630px] h-[389px] md:h-[320px] xl:h-[389px]">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5631.39973115063!2d98.67816612873084!3d3.5872587021008466!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303131cf0fa1607f%3A0x18c10c276bcb239b!2sWisma%20Benteng%20Restaurant!5e0!3m2!1sen!2sid!4v1721889409712!5m2!1sen!2sid"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1928.294047024729!2d-71.56303921492643!3d-16.418903957563284!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424b533a162653%3A0x1adcad2ffb1c457a!2sSALON%20DE%20EVENTOS%20%22EL%20ROCIO%22!5e1!3m2!1ses!2spe!4v1763181771124!5m2!1ses!2spe"
                     width="100%"
                     height="100%"
                     allowFullScreen={false}

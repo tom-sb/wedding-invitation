@@ -77,7 +77,7 @@ export default function Reservation() {
         const start = limit * (currentPage - 1) + 1
         const end = Math.min(limit * currentPage, respondent.length)
 
-        return <span className="text-center">Showing {start} - {end} from {respondent.length}</span>
+        return <span className="text-center"> {start} - {end} de {respondent.length}</span>
     }
 
     return (

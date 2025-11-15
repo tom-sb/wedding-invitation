@@ -4,7 +4,7 @@ export const useMusic = () => {
     const audioRef = React.useRef<HTMLAudioElement | null>(null)
 
     function play() {
-        audioRef.current = new Audio("/audio/music.mp3")
+        audioRef.current = new Audio("/audio.mp3")
 
         if (audioRef.current) {
             audioRef.current.onplay = function () {
