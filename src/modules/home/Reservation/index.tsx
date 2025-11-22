@@ -35,7 +35,7 @@ export default function Reservation() {
                 className="space-y-4 md:space-y-5 text-center px-5 md:px-0"
                 {...anim(bluryEffect)}
             >
-                <h2 className="heading-4 md:heading-3 xl:heading-2 font-dancing-script">Reservación</h2>
+                <h2 className="heading-4 md:heading-3 xl:heading-2 font-dancing-script">Confirmación</h2>
             </motion.div>
             <Form />
         </section>

@@ -11,7 +11,6 @@ import Invitation from './Invitation';
 import BankATM from './BankATM';
 import Slideshow from './Slideshow';
 import Guestbook from './Guestbook';
-import Reservation from './Reservation';
 import ButtonMusic from './ButtonMusic';
 
 const Footer = dynamic(() => import("@/modules/home/Footer"), { ssr: false })
@@ -38,7 +37,6 @@ function Content() {
             <Event />
             <BankATM />
             <Guestbook />
-            <Reservation />
             <Countdown />
             <Footer />
         </React.Fragment>

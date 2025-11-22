@@ -7,21 +7,7 @@ import { db_firestore } from "@/configs/firebase";
 import { doc, setDoc } from "firebase/firestore";
 import { uniqueId } from "@/lib/utils";
 
-const pattern = /[<>*'"`=)(:;\/\\]/;
-
-const initialForm = { name: "", total: "", message: "", present: "0" }
-
-const formScheme = z.object({
-    name: z.string()
-        .min(1, { message: "Name field is required" })
-        .max(50, { message: "Value cannot long from 50 characters" })
-        .refine((value) => !pattern.test(value), { message: `Value cannot contain special characters ${pattern}` }),
-    total: z.string()
-        .min(1, { message: "Minimum 1 guest will be attend" }),
-    message: z.string()
-        .min(1, { message: "Message field is required" })
-        .max(200, { message: "Value cannot long from 200 characters" }),
-})
+const initialForm = { present: "0" }
 
 type Errors = {
     [field: string]: string[]
@@ -32,16 +18,13 @@ export default function Form() {
     let [form, setForm] = React.useState(initialForm)
     let [formErrors, setFormErrors] = React.useState({} as Errors)
 
-    // transform total type from string to number and present become boolean
-    async function addReservation(value: Omit<typeof form, "total" | "present"> & { total: number; present: boolean }) {
+    // transform present become boolean
+    async function addReservation(value: Omit<typeof form, "present"> & { present: boolean }) {
         const collectionName = "reservations"
         const id = uniqueId(collectionName)
 
         await setDoc(doc(db_firestore, collectionName, id), {
-            name: value.name,
-            total: value.total,
             present: value.present,
-            message: value.message,
             created_at: Date.now()
         });
     }
@@ -54,7 +37,7 @@ export default function Form() {
 
         setForm(prev => ({
             ...prev,
-            [name]: name === "total" ? sanitized : value
+            [name]: value
         }))
     }
 
@@ -65,9 +48,8 @@ export default function Form() {
         setFormErrors({})
 
         try {
-            const value = formScheme.parse(form)
-            // transform total type from string to number and present become boolean
-            const transformValue = { ...value, total: Number(value.total), present: Boolean(Number(form.present))  }
+            // transform present become boolean
+            const transformValue = { present: Boolean(Number(form.present))  }
 
             await addReservation(transformValue)
 
@@ -82,52 +64,10 @@ export default function Form() {
         }
     }
 
-
-    function FieldError({ name }: { name: string }) {
-        return formErrors[name] && <span className="text-sm text-red-600">{formErrors[name].join(", ")}</span>
-    }
-
     return (
-        <form onSubmit={submit} className="space-y-3 mt-10 max-w-xl mx-auto px-5 md:px-0">
-            <div className="space-y-1">
-                <input
-                    type="text"
-                    className="block w-full rounded-md bg-gray-100 border-transparent focus:border-ivory focus:bg-white focus:ring-0"
-                    placeholder="Nombres"
-                    value={form.name}
-                    onChange={handleChange}
-                    name="name"
-                />
-                <FieldError name="name" />
-            </div>
-            <div className="space-y-1">
-                <input
-                    type="text"
-                    className="block w-full rounded-md bg-gray-100 border-transparent focus:border-ivory focus:bg-white focus:ring-0"
-                    placeholder="Total"
-                    value={form.total}
-                    onChange={handleChange}
-                    name="total"
-                />
-                <FieldError name="total" />
-            </div>
-            <div>
-                <div className="relative">
-                    <textarea
-                        className="block w-full rounded-md bg-gray-100 border-transparent focus:border-ivory focus:bg-white focus:ring-0 resize-none"
-                        rows={5}
-                        placeholder="Mensaje"
-                        value={form.message}
-                        onChange={handleChange}
-                        maxLength={200}
-                        name="message"
-                    />
-                    <span className="absolute bottom-1 right-1">{200 - form.message.length}</span>
-                </div>
-                <FieldError name="message" />
-            </div>
+        <form onSubmit={submit} className="space-y-3 mt-10 max-w-xl mx-auto px-5 md:px-0">        
             <div className="space-y-4 md:space-y-2 pt-2">
-                <p className="font-roboto-slab text-sm md:text-base font-medium">Confirmación</p>
+                <p className="font-roboto-slab text-sm md:text-base font-medium">Confirma tu presecia </p>
                 <div className="flex items-center gap-3">
                     <input
                         id="yes"
