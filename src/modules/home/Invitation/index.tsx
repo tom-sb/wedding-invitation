@@ -110,8 +110,8 @@ function Card() {
                     {...anim({ delay: 0.1 })}
                 >
                     <Image
-                        src="/photos/hero.jpg"
-                        alt="hero-photos"
+                        src="/photos/initial.jpeg"
+                        alt="initial-photos"
                         width={1000}
                         height={1000}
                         quality={100}

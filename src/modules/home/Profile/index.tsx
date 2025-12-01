@@ -60,8 +60,8 @@ export default function Profile() {
                     {...anim({ duration: 1, delay: .2 })}
                 >
                     <ProgressiveImage
-                        src="/photos/kio.jpg"
-                        alt="kio-photos"
+                        src="/photos/fernando.jpg"
+                        alt="fernando-photos"
                         width={500}
                         height={1000}
                         className="size-full object-cover"
@@ -72,8 +72,8 @@ export default function Profile() {
                     {...anim({ duration: 1, delay: .4 })}
                 >
                     <ProgressiveImage
-                        src="/photos/christine.jpg"
-                        alt="christine-photos"
+                        src="/photos/maribel.jpeg"
+                        alt="maribel-photos"
                         width={500}
                         height={1000}
                         className="size-full object-cover"

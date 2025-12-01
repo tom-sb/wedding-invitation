@@ -7,9 +7,9 @@ import { AnimatePresence, motion } from "framer-motion"
 const photos = [
     "/photos/slideshow/1.jpeg",
     "/photos/slideshow/2.jpeg",
-    "/photos/slideshow/3.jpeg",
+    "/photos/slideshow/3.jpg",
     "/photos/slideshow/4.jpeg",
-    "/photos/slideshow/5.jpeg"
+    "/photos/slideshow/5.jpg"
 ]
 
 export default function ImageShow() {
