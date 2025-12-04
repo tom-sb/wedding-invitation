@@ -78,7 +78,7 @@ function Card() {
             <section
                 className="min-h-dvh max-w-[2650px] mx-auto bg-ivory flex flex-col md:flex-row justify-between overflow-hidden">
                 <motion.div
-                    className="px-7 md:px-14 py-7 w-full xl:w-5/12 space-y-6"
+                    className="px-7 md:px-14 py-10 w-full xl:w-5/12 space-y-6 flex flex-col justify-center"
                     {...anim({ delay: 0 })}
                 >
                     <div className="space-y-4">
@@ -116,7 +116,7 @@ function Card() {
                         height={1000}
                         quality={100}
                         priority
-                        className="size-full object-cover"
+                        className="w-full h-[60vh] md:h-screen object-cover md:object-cover object-center"
                     />
                 </motion.div>
             </section >

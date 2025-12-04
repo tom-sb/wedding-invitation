@@ -53,7 +53,7 @@ export default function ImageShow() {
                         width={1000}
                         height={1000}
                         quality={100}
-                        className="object-cover w-screen h-screen"
+                        className="object-cover w-full h-[70vh] md:h-screen object-center"
                     />
                 </motion.div>
             </motion.div>

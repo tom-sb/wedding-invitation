@@ -2,7 +2,7 @@ import ImageShow from "./ImageShow"
 
 export default function Slideshow() {
     return (
-        <section className="relative min-h-[100dvh] overflow-hidden" id="hero">
+        <section className="relative min-h-[50dvh] overflow-hidden" id="hero">
             <div className="absolute inset-0 bg-transparent flex items-center justify-center animate-none z-[9]">
                 <div className="text-center space-y-5 md:space-y-6 -translate-y-[100%]">
                     <p className="font-roboto-slab">Nuestra boda</p>
