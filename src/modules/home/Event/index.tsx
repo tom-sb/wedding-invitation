@@ -65,11 +65,22 @@ const anim = (variants: Variants) => ({
 export default function Event() {
 
     return (
-        <section className="container-box2 mt-betweenSectionMd 
-        xl:mt-betweenSection flex flex-col md:flex-row justify-between gap-14 md:gap-4" >
-            <div>
+        <section className="container-box2 mt-0 md:mt-betweenSectionMd 
+            xl:mt-betweenSection flex flex-col md:flex-row justify-between gap-0 md:gap-0" >
+            <div className="relative w-full md:w-1/2">
+            <div
+                className="
+                    absolute inset-0
+                    bg-[url('/photos/recepcion.jpeg')]
+                    bg-cover
+                    bg-center
+                    bg-no-repeat
+                    opacity-50      /* transparencia */
+                "
+            />
+            <div className="relative z-10 m-5">
                 <motion.h2
-                    className="heading-4 md:heading-3 xl:heading-2 font-dancing-script font-bold px-4 md:px-0"
+                    className="heading-4 md:heading-3 xl:heading-2 font-dancing-script font-bold px-2 md:px-0"
                     {...anim(bluryEffect)}
                 >
                     Boda Civil & Recepción
@@ -98,7 +109,8 @@ export default function Event() {
                     </div>
                 </div>
             </div>
-            <div className="w-full md:w-1/2 xl:w-[630px] h-[389px] md:h-[320px] xl:h-[389px]">
+            </div>
+            <div className="md:w-1/2 xl:w-[630px] h-[389px] md:h-[320px] xl:h-auto">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1928.294047024729!2d-71.56303921492643!3d-16.418903957563284!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424b533a162653%3A0x1adcad2ffb1c457a!2sSALON%20DE%20EVENTOS%20%22EL%20ROCIO%22!5e1!3m2!1ses!2spe!4v1763181771124!5m2!1ses!2spe"
                     width="100%"

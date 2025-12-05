@@ -76,37 +76,43 @@ function Card() {
     return (
         <div className="fixed inset-0 z-[100] bg-ivory">
             <section
-                className="min-h-dvh max-w-[2650px] mx-auto bg-ivory flex flex-col md:flex-row justify-between overflow-hidden">
+                className="h-screen max-w-[2650px] mx-auto bg-ivory flex flex-col md:flex-row justify-between overflow-hidden">
                 <motion.div
-                    className="px-7 md:px-14 py-10 w-full xl:w-5/12 space-y-6 flex flex-col justify-center"
+                    className="px-7 md:px-14 py-10 w-full xl:w-5/12 flex-1 space-y-6 flex flex-col grid grid-rows-[1fr_auto]"
                     {...anim({ delay: 0 })}
                 >
-                    <div className="space-y-4">
+                    <div className="space-y-4 h-auto">
                         <div className="-space-y-3">
-                            <h3 className="heading-3 font-roboto-slab">31</h3>
-                            <h3 className="heading-3 font-roboto-slab">01</h3>
-                            <h3 className="heading-3 font-roboto-slab">26</h3>
+                            <h3 className="heading-2 font-roboto-slab md:heading-3">31</h3>
+                            <h3 className="heading-2 font-roboto-slab md:heading-3">01</h3>
+                            <h3 className="heading-2 font-roboto-slab md:heading-3">26</h3>
                         </div>
                         <div className="w-[1.5px] bg-black h-36 ml-5" />
-                        <h2 className="heading-3 xl:heading-2 font-bold font-dancing-script">
+                        <h2 className="heading-2 xl:heading-2 font-bold font-dancing-script md:heading-3">
                             Maribel & <br />Fernando
                         </h2>
                     </div>
                     {/* <div className="font-roboto-slab">
                     <p className="text-sm">Special invitation to</p>
                     <p className="font-medium">{inviteFor ?? "-"}</p>
-                </div> */}
+                    </div> */}
                     <div className="flex justify-start md:justify-center items-center pt-4">
                         <button onClick={openInvitation} className="group">
                             <div className="flex flex-col justify-center items-center border border-black rounded-lg px-4 py-2 pb-1 -space-y-1">
-                                <p className="font-roboto-slab text-sm">Abrir Invitación</p>
+                                <p className="text-2xl font-roboto-slab md:text-sm">Abrir Invitación</p>
                                 <RiArrowDownWideLine className="text-3xl group-hover:translate-y-1 group-active:scale-75 transition duration-300" />
                             </div>
                         </button>
                     </div>
                 </motion.div>
                 <motion.div
-                    className="w-full h-screen"
+                    className="
+                        w-full
+                        xl:w-5/12
+                        flex
+                        flex-col
+                        justify-center
+                    "
                     {...anim({ delay: 0.1 })}
                 >
                     <Image
@@ -116,7 +122,12 @@ function Card() {
                         height={1000}
                         quality={100}
                         priority
-                        className="w-full h-[60vh] md:h-screen object-cover md:object-cover object-center"
+                        className="
+                            w-full
+                            h-auto
+                            md:h-screen
+                            object-cover
+                        "
                     />
                 </motion.div>
             </section >

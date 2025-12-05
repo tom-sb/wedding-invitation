@@ -65,11 +65,22 @@ const anim = (variants: Variants) => ({
 export default function CivilEvent() {
 
     return (
-        <section className="container-box2 mt-betweenSectionMd 
-        xl:mt-betweenSection flex flex-col md:flex-row justify-between gap-14 md:gap-4" >
-            <div>
+        <section className="container-box2 mt-0 md:mt-betweenSectionMd 
+            xl:mt-betweenSection flex flex-col md:flex-row justify-between gap-0 md:gap-0" >
+            <div className="relative w-full md:w-1/2">
+            <div
+                className="
+                    absolute inset-0
+                    bg-[url('/photos/iglesia.jpg')]
+                    bg-cover
+                    bg-center
+                    bg-no-repeat
+                    opacity-50
+                "
+            />
+            <div className="relative z-10 m-5">
                 <motion.h2
-                    className="heading-4 md:heading-3 xl:heading-2 font-dancing-script font-bold px-4 md:px-0"
+                    className="heading-4 md:heading-3 xl:heading-2 font-dancing-script font-bold px-2 md:px-0"
                     {...anim(bluryEffect)}
                 >
                     Ceremonia Religiosa
@@ -98,7 +109,8 @@ export default function CivilEvent() {
                     </div>
                 </div>
             </div>
-            <div className="w-full md:w-1/2 xl:w-[630px] h-[389px] md:h-[320px] xl:h-[389px]">
+            </div>
+            <div className="md:w-1/2 xl:w-[630px] h-[389px] md:h-[320px] xl:h-auto">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6768.411494596199!2d-71.547718!3d-16.3846113!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a3f9e5242ab%3A0x8b791dffc5bc4c5f!2sParroquia%20San%20Miguel%20Arc%C3%A1ngel%20Cayma!5e1!3m2!1ses!2spe!4v1763181522818!5m2!1ses!2spe"
                     width="100%"
@@ -107,6 +119,7 @@ export default function CivilEvent() {
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade" />
             </div>
+            
         </section >
     )
 }
