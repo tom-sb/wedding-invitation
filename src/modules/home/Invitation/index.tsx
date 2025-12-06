@@ -76,7 +76,17 @@ function Card() {
     return (
         <div className="fixed inset-0 z-[100] bg-ivory">
             <section
-                className="h-[100dvh] max-w-[2650px] mx-auto bg-ivory flex flex-col md:flex-row justify-between overflow-hidden">
+                className="
+                    h-[100dvh]
+                    md:min-h-[100dvh]
+                    md:pb-[env(safe-area-inset-bottom)]
+                    max-w-[2650px]
+                    mx-auto
+                    bg-ivory
+                    flex flex-col md:flex-row
+                    justify-between
+                    overflow-hidden"
+            >
                 <motion.div
                     className="px-7 md:px-14 py-10 w-full xl:w-5/12 flex-1 space-y-6 flex flex-col grid grid-rows-[1fr_auto]"
                     {...anim({ delay: 0 })}
