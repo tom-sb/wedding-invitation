@@ -83,12 +83,12 @@ function Card() {
                 >
                     <div className="space-y-4 h-auto">
                         <div className="-space-y-3">
-                            <h3 className="heading-2 font-roboto-slab md:heading-3">31</h3>
-                            <h3 className="heading-2 font-roboto-slab md:heading-3">01</h3>
-                            <h3 className="heading-2 font-roboto-slab md:heading-3">26</h3>
+                            <h3 className="heading-3 font-roboto-slab md:heading-3">31</h3>
+                            <h3 className="heading-3 font-roboto-slab md:heading-3">01</h3>
+                            <h3 className="heading-3 font-roboto-slab md:heading-3">26</h3>
                         </div>
                         <div className="w-[1.5px] bg-black h-36 ml-5" />
-                        <h2 className="heading-2 xl:heading-2 font-bold font-dancing-script md:heading-3">
+                        <h2 className="heading-3 xl:heading-2 font-bold font-dancing-script md:heading-3">
                             Maribel & <br />Fernando
                         </h2>
                     </div>
@@ -99,7 +99,7 @@ function Card() {
                     <div className="flex justify-start md:justify-center items-center pt-4">
                         <button onClick={openInvitation} className="group">
                             <div className="flex flex-col justify-center items-center border border-black rounded-lg px-4 py-2 pb-1 -space-y-1">
-                                <p className="text-2xl font-roboto-slab md:text-sm">Abrir Invitación</p>
+                                <p className="text-xl font-roboto-slab md:text-sm">Abrir Invitación</p>
                                 <RiArrowDownWideLine className="text-3xl group-hover:translate-y-1 group-active:scale-75 transition duration-300" />
                             </div>
                         </button>
@@ -108,7 +108,7 @@ function Card() {
                 <motion.div
                     className="
                         w-full
-                        xl:w-5/12
+                        xl:w-9/12
                         flex
                         flex-col
                         justify-center

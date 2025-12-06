@@ -101,7 +101,7 @@ export default function OurStory() {
                         />
                     ))}
                 </motion.div>
-                <motion.div className="w-full xl:w-[527px] h-[461px]" {...anim(fadeIn)}>
+                <motion.div className="w-[325px] h-[207px] xl:w-[438px] h-[374px]" {...anim(fadeIn)}>
                     <Image
                         src="/photos/our-story.png"
                         width={1200}
