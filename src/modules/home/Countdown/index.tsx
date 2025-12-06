@@ -80,7 +80,7 @@ export default function Countdown() {
     return (
         <section className="container-box2 mt-betweenSectionMd xl:mt-betweenSection py-14 xl:py-20">
             <motion.div
-                className="flex flex-col md:flex-row justify-center items-center gap-16 md:gap-20 xl:gap-32"
+                className="flex flex-col md:flex-row justify-center items-center gap-10 md:gap-20 xl:gap-32"
                 {...anim(stagger)}
             >
                 <Li type="Días" value={time.days} delay={0.2} />
