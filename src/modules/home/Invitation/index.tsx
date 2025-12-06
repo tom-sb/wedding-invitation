@@ -78,8 +78,8 @@ function Card() {
             <section
                 className="
                     h-[100dvh]
-                    md:min-h-[100dvh]
-                    md:pb-[env(safe-area-inset-bottom)]
+                    sm:min-h-[100dvh]
+                    sm:pb-[env(safe-area-inset-bottom)]
                     max-w-[2650px]
                     mx-auto
                     bg-ivory
@@ -135,7 +135,7 @@ function Card() {
                         className="
                             w-full
                             h-auto
-                            md:h-screen
+                            md:h-auto
                             object-cover
                         "
                     />
