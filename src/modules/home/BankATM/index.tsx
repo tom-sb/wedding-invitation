@@ -72,9 +72,9 @@ export default function BankATM() {
                     </Modal.Button>
                     <Modal.Content>
                         <div className="flex flex-col justify-center items-center pt-8 pb-4 gap-3">
-                            <ATM name="Maribel" number="1750674999" cci='' />
-                            <p className="text-gray-500">or</p>
-                            <ATM name="Fernando" number="898 3392461371" cci='00389801339246137143' />
+                            <ATM name="Maribel" number="20096824252054" cci='00220019682425205449' bank='bcp' />
+                            <p className="text-gray-500">o</p>
+                            <ATM name="Fernando" number="898 3392461371" cci='00389801339246137143' bank='ibk'/>
                         </div>
                     </Modal.Content>
                 </Modal>
@@ -84,7 +84,7 @@ export default function BankATM() {
 }
 
 
-function ATM({ name, number, cci }: { name: string, number: string, cci: string }) {
+function ATM({ name, number, cci, bank }: { name: string, number: string, cci: string, bank: string }) {
     let [copied, setCopied] = React.useState(false)
     let [copiedCci, setCopiedCci] = React.useState(false)
 
@@ -111,7 +111,7 @@ function ATM({ name, number, cci }: { name: string, number: string, cci: string 
     return (
         <div className="flex flex-col justify-center items-center gap-3">
             <p className="font-medium">{`${name}`}</p>
-            <Image src="/ibk.png" alt="bca-icon" width={70} height={70} />
+            <Image src={`/${bank}.png`} alt="bca-icon" width={70} height={70} />
             <p className="font-medium">{`${number}`}</p>
             <button className="bg-ivory rounded-md" onClick={copyText}>
                 <div className="px-3 py-[0px] flex items-center justify-center gap-x-2 text-white">

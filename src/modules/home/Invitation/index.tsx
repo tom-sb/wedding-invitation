@@ -78,14 +78,13 @@ function Card() {
             <section
                 className="
                     h-[100dvh]
-                    sm:min-h-[100dvh]
-                    sm:pb-[env(safe-area-inset-bottom)]
                     max-w-[2650px]
                     mx-auto
                     bg-ivory
                     flex flex-col md:flex-row
                     justify-between
-                    overflow-hidden"
+                    overflow-hidden
+                    "
             >
                 <motion.div
                     className="px-7 md:px-14 py-10 w-full xl:w-5/12 flex-1 space-y-6 flex flex-col grid grid-rows-[1fr_auto]"
@@ -119,9 +118,11 @@ function Card() {
                     className="
                         w-full
                         xl:w-9/12
+                        pb-5
+                        xl:pb-0
                         flex
                         flex-col
-                        justify-center
+                        justify-start
                     "
                     {...anim({ delay: 0.1 })}
                 >
@@ -135,7 +136,6 @@ function Card() {
                         className="
                             w-full
                             h-auto
-                            md:h-auto
                             object-cover
                         "
                     />

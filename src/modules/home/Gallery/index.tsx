@@ -60,7 +60,7 @@ const images = [
     "/photos/gallery-10.jpeg",
     "/photos/gallery-11.jpg",
     "/photos/gallery-12.jpeg",
-    //"/photos/gallery-13.jpg"
+    "/photos/gallery-13.jpg"
 ]
 
 export default function Gallery() {
@@ -102,7 +102,8 @@ export default function Gallery() {
                         <Photo imageSrc={images[4]} delay={0.2} onClick={selectImage(4)} />
                         <Photo imageSrc={images[6]} delay={0.2} onClick={selectImage(6)} />
                         <Photo imageSrc={images[8]} delay={0.2} onClick={selectImage(8)} />
-                        <Photo imageSrc={images[10]} delay={0.2} onClick={selectImage(10)} objectPosition="object-left"/>
+                        <Photo imageSrc={images[10]} delay={0.2} onClick={selectImage(10)} />
+                        <Photo imageSrc={images[12]} delay={0.2} onClick={selectImage(12)} objectPosition="object-left"/>
 
 
                     </Column>

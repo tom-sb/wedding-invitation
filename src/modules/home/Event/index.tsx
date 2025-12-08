@@ -65,7 +65,7 @@ const anim = (variants: Variants) => ({
 export default function Event() {
 
     return (
-        <section className="container-box2 mt-0 md:mt-betweenSectionMd 
+        <section className="container-box2 mb-14 md:mt-betweenSectionMd 
             xl:mt-betweenSection flex flex-col md:flex-row justify-between gap-0 md:gap-0" >
             <div className="relative w-full md:w-1/2">
             <div

@@ -72,7 +72,7 @@ export default function Profile() {
                     {...anim({ duration: 1, delay: .4 })}
                 >
                     <ProgressiveImage
-                        src="/photos/maribel.jpeg"
+                        src="/photos/maribel.jpg"
                         alt="maribel-photos"
                         width={500}
                         height={1000}

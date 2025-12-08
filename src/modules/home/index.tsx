@@ -13,6 +13,7 @@ import Slideshow from './Slideshow';
 import Guestbook from './Guestbook';
 import ButtonMusic from './ButtonMusic';
 import Hero from './Hero';
+import GodParents from './Godparents';
 
 const Footer = dynamic(() => import("@/modules/home/Footer"), { ssr: false })
 const SmoothScroll = dynamic(() => import("@/components/SmothScroll"), { ssr: false })
@@ -34,6 +35,7 @@ function Content() {
             <Profile />
             <OurStory />
             <Gallery />
+            <GodParents />
             <CivilEvent />
             <Event />
             <BankATM />
