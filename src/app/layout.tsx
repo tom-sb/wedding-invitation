@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     icon: "/ring.svg"
   },
   openGraph: {
-    images: "https://ik.imagekit.io/89axhxmqv/gallery-2.jpg",
+    images: "https://postimg.cc/zyJGLN36",
     type: "website",
     locale: "ID-id",
     siteName: "",
