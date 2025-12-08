@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     icon: "/ring.svg"
   },
   openGraph: {
-    images: "https://wedding-invitation-theta-five.vercel.app/_next/image?url=%2Fphotos%2Fgallery-2.jpg&w=640&q=75",
+    images: "https://ik.imagekit.io/89axhxmqv/gallery-2.jpg",
     type: "website",
     locale: "ID-id",
     siteName: "",
