@@ -19,12 +19,12 @@ export const metadata: Metadata = {
     icon: "/ring.svg"
   },
   openGraph: {
-    images: "https://ik.imagekit.io/ils26chuk/PWP%20KioChristine%2017r%20copy.jpg?updatedAt=1722333775655",
+    images: "/photos/gallery-2.jpg",
     type: "website",
     locale: "ID-id",
     siteName: "",
-    title: "Wedding of Maribel & Fernando",
-    description: "The wedding of Maribel & Fernando at January, 31 2026",
+    title: "Boda: Maribel & Fernando",
+    description: "La boda de Maribel & Fernando at January, 31 2026",
   },
 };
 
