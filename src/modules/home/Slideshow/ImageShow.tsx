@@ -5,18 +5,18 @@ import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion"
 
 const desktopPhotos = [
-    "/photos/slideshow/1.jpeg",
+    "/photos/slideshow/1.jpg",
     "/photos/slideshow/2.jpeg",
     "/photos/slideshow/3.jpg",
     "/photos/slideshow/4.jpeg",
-    "/photos/slideshow/5.jpg"
+    "/photos/slideshow/5.jpeg"
 ]
 
 const mobilePhotos = [
-    "/photos/slideshow/mobile/1.jpeg",
+    "/photos/slideshow/mobile/1.jpg",
     "/photos/slideshow/mobile/2.jpeg",
     "/photos/slideshow/mobile/3.jpg",
-    "/photos/slideshow/mobile/4.jpg",
+    "/photos/slideshow/mobile/4.jpeg",
     "/photos/slideshow/mobile/5.jpeg"
 ];
 
