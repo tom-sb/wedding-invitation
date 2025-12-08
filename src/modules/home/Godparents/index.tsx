@@ -90,15 +90,15 @@ export default function GodParents() {
                                 {...anim(stagger)}
                             >
                                 <Li delay={0.2}>
-                                <p className="text-xl md:text-2xl font-dancing-script">Flavio D. Puma Mamani</p>
+                                <p className="heading-4 md:heading-3 font-dancing-script">Flavio D. Puma Mamani</p>
                                 </Li>
 
                                 <Li delay={0.3}>
-                                <p className="text-xl md:text-2xl font-dancing-script">&</p>
+                                <p className="heading-4 md:heading-4 font-dancing-script">&</p>
                                 </Li>
 
                                 <Li delay={0.4}>
-                                <p className="text-xl md:text-2xl font-dancing-script">Justina Villanueva Echarri</p>
+                                <p className="heading-4 md:heading-3 font-dancing-script">Justina Villanueva Echarri</p>
                                 </Li>
                             </motion.ul>
                         </div>
@@ -118,15 +118,15 @@ export default function GodParents() {
                                 {...anim(stagger)}
                             >
                                 <Li delay={0.2}>
-                                <p className="text-xl md:text-2xl font-dancing-script">Wiliam C. Huaman Machaca</p>
+                                <p className="heading-4 md:heading-3 font-dancing-script">Wiliam C. Huaman Machaca</p>
                                 </Li>
 
                                 <Li delay={0.3}>
-                                <p className="text-xl md:text-2xl font-dancing-script">&</p>
+                                <p className="heading-4 md:heading-4 font-dancing-script">&</p>
                                 </Li>
 
                                 <Li delay={0.4}>
-                                <p className="text-xl md:text-2xl font-dancing-script">Virginia Barazorda Gonzales</p>
+                                <p className="heading-4 md:heading-3 font-dancing-script">Virginia Barazorda Gonzales</p>
                                 </Li>
                             </motion.ul>
                         </div>

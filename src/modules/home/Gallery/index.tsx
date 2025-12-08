@@ -59,8 +59,8 @@ const images = [
     "/photos/gallery-9.jpeg",
     "/photos/gallery-10.jpeg",
     "/photos/gallery-11.jpg",
-    "/photos/gallery-12.jpeg",
-    "/photos/gallery-13.jpg"
+    "/photos/gallery-12.jpg",
+    "/photos/gallery-13.jpeg"
 ]
 
 export default function Gallery() {
@@ -100,10 +100,10 @@ export default function Gallery() {
                         <Photo imageSrc={images[0]} delay={0} onClick={selectImage(0)} />
                         <Photo imageSrc={images[2]} delay={0.2} onClick={selectImage(2)} />
                         <Photo imageSrc={images[4]} delay={0.2} onClick={selectImage(4)} />
-                        <Photo imageSrc={images[6]} delay={0.2} onClick={selectImage(6)} />
-                        <Photo imageSrc={images[8]} delay={0.2} onClick={selectImage(8)} />
-                        <Photo imageSrc={images[10]} delay={0.2} onClick={selectImage(10)} />
-                        <Photo imageSrc={images[12]} delay={0.2} onClick={selectImage(12)} objectPosition="object-left"/>
+                        <Photo imageSrc={images[6]} delay={0.4} onClick={selectImage(6)} />
+                        <Photo imageSrc={images[8]} delay={0.4} onClick={selectImage(8)} />
+                        <Photo imageSrc={images[10]} delay={0.6} onClick={selectImage(10)} />
+                        <Photo imageSrc={images[12]} delay={0.6} onClick={selectImage(12)} objectPosition="object-left"/>
 
 
                     </Column>
@@ -111,9 +111,9 @@ export default function Gallery() {
                         <Photo imageSrc={images[1]} delay={0.2} onClick={selectImage(1)} />
                         <Photo imageSrc={images[3]} delay={0.4} onClick={selectImage(3)} />
                         <Photo imageSrc={images[5]} delay={0.4} onClick={selectImage(5)} />
-                        <Photo imageSrc={images[7]} delay={0.4} onClick={selectImage(7)} />
-                        <Photo imageSrc={images[9]} delay={0.4} onClick={selectImage(9)} />
-                        <Photo imageSrc={images[11]} delay={0.4} onClick={selectImage(11)} objectPosition="object-left" />
+                        <Photo imageSrc={images[7]} delay={0.6} onClick={selectImage(7)} />
+                        <Photo imageSrc={images[9]} delay={0.6} onClick={selectImage(9)} />
+                        <Photo imageSrc={images[11]} delay={0.8} onClick={selectImage(11)} objectPosition="object-left" />
                     </Column>
                 </div>
                 <motion.div
