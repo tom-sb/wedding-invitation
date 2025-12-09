@@ -59,7 +59,8 @@ export default function Form() {
         try {
             const value = formScheme.parse(form)
 
-            await addWish(value)
+            // TODO: activar y probar para el dia de la boda
+            // await addWish(value)
 
             toast.success('Submitting successful')
             setForm({ name: "", message: "" })
@@ -83,10 +84,11 @@ export default function Form() {
                 <input
                     type="text"
                     className="block w-full rounded-md bg-gray-100 border-transparent focus:border-ivory focus:bg-white focus:ring-0"
-                    placeholder="Name"
+                    placeholder="Nombre (Disponible el día de la boda)"
                     value={form.name}
                     onChange={handleChange}
                     name="name"
+                    disabled
                 />
                 <FieldError name="name" />
             </div>
@@ -96,19 +98,23 @@ export default function Form() {
                     <textarea
                         className="block w-full rounded-md bg-gray-100 border-transparent focus:border-ivory focus:bg-white focus:ring-0 resize-none"
                         rows={5}
-                        placeholder="Message"
+                        placeholder="Mensaje (Disponible el día de la boda)"
                         value={form.message}
                         onChange={handleChange}
                         maxLength={200}
                         name="message"
+                        disabled
                     />
                     <span className="absolute bottom-1 right-1">{200 - form.message.length}</span>
                 </div>
                 <FieldError name="message" />
             </div>
             <div className="flex justify-end">
-                <button className="font-roboto-slab w-max ml-auto mr-0 bg-black text-ivory rounded-md px-10 py-2
-                text-sm md:text-base outline-gray-500 active:outline-double active:outline-2 outline-offset-2">
+                <button
+                    className="font-roboto-slab w-max ml-auto mr-0 bg-black text-ivory rounded-md px-10 py-2
+                        text-sm md:text-base outline-gray-500 active:outline-double active:outline-2 outline-offset-2"
+                    disabled
+                >
                     Enviar
                 </button>
             </div>
